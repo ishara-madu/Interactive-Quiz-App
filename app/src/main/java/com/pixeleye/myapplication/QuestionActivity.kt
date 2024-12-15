@@ -114,7 +114,7 @@ class QuestionActivity : AppCompatActivity() {
     private fun submit() {
         if(submit.text == "Submit"){
             if(selectedOption == null){
-                Toast.makeText(this,"Please select an answer",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Please select an any answer",Toast.LENGTH_SHORT).show()
                 return
             }else{
                 if (currentPosition < questionList.size - 2) {
