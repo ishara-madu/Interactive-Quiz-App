@@ -1,5 +1,6 @@
 package com.pixeleye.myapplication
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
@@ -27,7 +28,9 @@ class QuestionActivity : AppCompatActivity() {
     private lateinit var submit : Button
     private var currentPosition:Int = 0
     private var questionList = Constant.getQuestion()
-    private var selectedOption:Int = 0
+    private var selectedOption:Int? = null
+    private var score:Int = 0
+    private var name:String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +50,7 @@ class QuestionActivity : AppCompatActivity() {
         option3 = findViewById(R.id.thirdAnswer)
         option4 = findViewById(R.id.fourthAnswer)
         submit = findViewById(R.id.submitButton)
+        name = intent.getStringExtra("name").toString()
 
         setQuestion()
 
@@ -85,8 +89,8 @@ class QuestionActivity : AppCompatActivity() {
     }
     private fun setQuestion() {
         val question = questionList[currentPosition]
-        progressBar.progress = currentPosition
-        progressText.text = "${currentPosition}/${questionList.size}"
+        progressBar.progress = currentPosition+1
+        progressText.text = "${currentPosition+1}/${questionList.size}"
         title.text = question.question
         flag.setImageResource(question.image)
         option1.text = question.option1
@@ -110,22 +114,38 @@ class QuestionActivity : AppCompatActivity() {
     private fun submit() {
         if(submit.text == "Submit"){
             if(selectedOption == null){
-                Toast.makeText(this,"Please select an option",Toast.LENGTH_SHORT).show()
-            }else {
+                Toast.makeText(this,"Please select an answer",Toast.LENGTH_SHORT).show()
+                return
+            }else{
+                if (currentPosition < questionList.size - 2) {
                 submit.text = "Next"
+                }else{
+                submit.text = "Finish"
+                }
                 val question = questionList[currentPosition]
                 if (selectedOption == question.correctAnswer) {
-                    correctAnswer(selectedOption)
+                    correctAnswer(selectedOption!!)
+                    score++
                 } else {
                     correctAnswer(question.correctAnswer)
-                    wrongAnswer(selectedOption)
+                    wrongAnswer(selectedOption!!)
                 }
+                selectedOption = null
             }
-        }else{
+        }else {
+            if (currentPosition < questionList.size - 1) {
                 currentPosition++
                 setQuestion()
                 submit.text = "Submit"
                 clearSelection()
+            }else{
+                var intent = Intent(this,SummeryActivity::class.java)
+                intent.putExtra("score",score)
+                intent.putExtra("total",questionList.size)
+                intent.putExtra("name",name)
+                finish()
+                startActivity(intent)
+            }
         }
     }
     private fun correctAnswer(option: Int) {

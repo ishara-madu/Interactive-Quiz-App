@@ -2,6 +2,7 @@ package com.pixeleye.myapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Button
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Please enter your name",Toast.LENGTH_SHORT).show()
             }else{
                 val intent = Intent(this,QuestionActivity::class.java)
+                intent.putExtra("name",name.text.toString())
+                finish()
                 startActivity(intent)
             }
         }
