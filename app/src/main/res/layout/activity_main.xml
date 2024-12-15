@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"
         android:text="Quiz app"
         android:textStyle="bold"
-        android:textSize="42dp"
+        android:textSize="42sp"
         android:textColor="@color/white"
-        />
+        tools:ignore="HardcodedText" />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="Welcome"
                 android:textStyle="bold"
-                android:textSize="22dp"
+                android:textSize="22sp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:padding="16dp"
@@ -48,25 +48,27 @@
                 android:text="Please enter your name"
                 android:gravity="center"
                 android:layout_gravity="center"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:padding="16dp"
                 />
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/name"
                 android:hint="Name"
-                android:textSize="15dp"
+                android:minHeight="48dp"
                 android:paddingHorizontal="20dp"
-                />
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/startButton"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 app:cornerRadius="5dp"
                 android:text="Start"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/blue"
