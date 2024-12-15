@@ -27,9 +27,9 @@ Welcome to the **Simple Quiz App**, a fun and interactive way to test your knowl
 
 Here’s a sneak peek of the app:  
 
-| Screenshot 1 | Screenshot 2 | Screenshot 3 | Screenshot 4 |  
-|--------------|--------------|--------------|--------------|  
-| ![Screenshot 1](assets/screenshots/quiz1.jpg) | ![Screenshot 2](assets/screenshots/quiz2.jpg) | ![Screenshot 3](assets/screenshots/quiz3.jpg) | ![Screenshot 4](assets/screenshots/quiz4.jpg) |  
+| Screenshot 1                          | Screenshot 2 | Screenshot 3 | Screenshot 4 |  
+|---------------------------------------|--------------|--------------|--------------|  
+| ![Screenshot 1](screenshots/img1.jpg) | ![Screenshot 2](assets/screenshots/quiz2.jpg) | ![Screenshot 3](assets/screenshots/quiz3.jpg) | ![Screenshot 4](assets/screenshots/quiz4.jpg) |  
 
 ---
 
