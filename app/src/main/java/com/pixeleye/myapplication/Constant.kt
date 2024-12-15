@@ -5,7 +5,7 @@ object Constant{
         val questionList = ArrayList<QuestionClass>()
 
         val qu1 = QuestionClass(
-            1,
+            0,
             "What country does this flag belong to?",
             R.drawable.angola,
             "Angola",
@@ -17,7 +17,7 @@ object Constant{
         questionList.add(qu1)
 
         val qu2 = QuestionClass(
-            2,
+            1,
             "What country does this flag belong to?",
             R.drawable.turkey,
             "Angola",
@@ -29,7 +29,7 @@ object Constant{
         questionList.add(qu2)
 
         val qu3 = QuestionClass(
-            3,
+            2,
             "What country does this flag belong to?",
             R.drawable.australia,
             "Angola",
@@ -41,7 +41,7 @@ object Constant{
         questionList.add(qu3)
 
         val qu4 = QuestionClass(
-            4,
+            3,
             "What country does this flag belong to?",
             R.drawable.azerbaijan,
             "Angola",
@@ -53,7 +53,7 @@ object Constant{
         questionList.add(qu4)
 
         val qu5 = QuestionClass(
-            5,
+            4,
             "What country does this flag belong to?",
             R.drawable.costa_rica,
             "Argentina",
@@ -65,7 +65,7 @@ object Constant{
         questionList.add(qu5)
 
         val qu6 = QuestionClass(
-            6,
+            5,
             "What country does this flag belong to?",
             R.drawable.united_states,
             "Belgium",
