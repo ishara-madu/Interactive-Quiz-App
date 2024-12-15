@@ -32,6 +32,11 @@ Here’s a sneak peek of the app:
 | ![Screenshot 1](screenshots/img1.jpg) | ![Screenshot 2](screenshots/img2.jpg) | ![Screenshot 3](screenshots/img3.jpg) | ![Screenshot 4](screenshots/img4.jpg) |  
 
 ---
+| Screenshot 5                          | Screenshot 6                          | Screenshot 7                          | Screenshot 8                          |  
+|---------------------------------------|---------------------------------------|---------------------------------------|---------------------------------------|  
+| ![Screenshot 1](screenshots/img5.jpg) | ![Screenshot 2](screenshots/img6.jpg) | ![Screenshot 3](screenshots/img7.jpg) | ![Screenshot 4](screenshots/img8.jpg) |  
+
+---
 
 ## **How It Works**  
 
