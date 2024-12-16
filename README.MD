@@ -85,7 +85,7 @@ Our roadmap includes:
 
 ## **Contact Us**  
 
-For any issues, feedback, or suggestions, feel free to [open an issue](https://github.com/username/quiz-app/issues) or reach out via email at [youremail@example.com].  
+For any issues, feedback, or suggestions, feel free to [open an issue](https://github.com/ishara-madu/Interactive-Quiz-App/issues) or reach out via email at [isharamdushankab@gmail.com].  
 
 ---
 
